@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>秋</title>
+
+	<meta name="description" content="A template with a two-sided, magazine-like layout and a flat page flip animation" />
+	<meta name="keywords" content="grid, pageflip, reveal, animation, layout, book, magazine, web design, template, demo" />
+
+	<link rel="stylesheet" type="text/css" href="css/base.css" />
+	<script>document.documentElement.className = "js"; var supportsCssVars = function () { var e, t = document.createElement("style"); return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e }; supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
+	<script src="js/jquery.min.js"></script>
+	<style>
+		.maple {
+			position: absolute;
+			top: 0;
+			color: #ff0000;
+			z-index:2001;
+		}
+	</style>
+</head>
+
+<body class="loading">
+
+	<svg class="hidden">
+		<symbol id="icon-arrow" viewBox="0 0 24 24">
+			<title>arrow</title>
+			<polygon points="6.3,12.8 20.9,12.8 20.9,11.2 6.3,11.2 10.2,7.2 9,6 3.1,12 9,18 10.2,16.8 " />
+		</symbol>
+		<symbol id="icon-drop" viewBox="0 0 24 24">
+			<title>drop</title>
+			<path d="M12,21c-3.6,0-6.6-3-6.6-6.6C5.4,11,10.8,4,11.4,3.2C11.6,3.1,11.8,3,12,3s0.4,0.1,0.6,0.3c0.6,0.8,6.1,7.8,6.1,11.2C18.6,18.1,15.6,21,12,21zM12,4.8c-1.8,2.4-5.2,7.4-5.2,9.6c0,2.9,2.3,5.2,5.2,5.2s5.2-2.3,5.2-5.2C17.2,12.2,13.8,7.3,12,4.8z"
+			/>
+			<path d="M12,18.2c-0.4,0-0.7-0.3-0.7-0.7s0.3-0.7,0.7-0.7c1.3,0,2.4-1.1,2.4-2.4c0-0.4,0.3-0.7,0.7-0.7c0.4,0,0.7,0.3,0.7,0.7C15.8,16.5,14.1,18.2,12,18.2z"
+			/>
+		</symbol>
+		<svg id="icon-nav" viewBox="0 0 152 63">
+			<title>navarrow</title>
+			<path d="M115.737 29L92.77 6.283c-.932-.92-1.21-2.84-.617-4.281.594-1.443 1.837-1.862 2.765-.953l28.429 28.116c.574.57.925 1.557.925 2.619 0 1.06-.351 2.046-.925 2.616l-28.43 28.114c-.336.327-.707.486-1.074.486-.659 0-1.307-.509-1.69-1.437-.593-1.442-.315-3.362.617-4.284L115.299 35H3.442C2.032 35 .89 33.656.89 32c0-1.658 1.143-3 2.552-3H115.737z"
+			/>
+		</svg>
+	</svg>
+	<main>
+		<p class="message">pc画面效果更好哦</p>
+		<div class="slideshow">
+
+			<div class="slide slide--layout-1 slide--current">
+				<figure class="slide__figure">
+					<div class="slide__figure-inner">
+						<div class="slide__figure-img" style="background-image: url(img/1.jpg)"></div>
+						<div class="slide__figure-reveal"></div>
+					</div>
+					<figcaption>
+						<h3 class="slide__figure-title">2018年11月23日 清晨</h3>
+						<p class="slide__figure-description">日出岚山</p>
+					</figcaption>
+				</figure>
+				<figure class="slide__figure">
+					<div class="slide__figure-inner">
+						<div class="slide__figure-img" style="background-image: url(img/2.jpg);background-position: 90% 90%;"></div>
+						<div class="slide__figure-reveal"></div>
+					</div>
+					<figcaption>
+						<h3 class="slide__figure-title">抱住艳秋</h3>
+						<p class="slide__figure-description">不准跑陪我赏枫</p>
+					</figcaption>
+				</figure>
+				<figure class="slide__figure">
+					<div class="slide__figure-inner">
+						<div class="slide__figure-img" style="background-image: url(img/3.jpg)"></div>
+						<div class="slide__figure-reveal"></div>
+					</div>
+					<figcaption>
+						<h3 class="slide__figure-title">心有灵犀</h3>
+						<p class="slide__figure-description">一样的动作....耶!</p>
+					</figcaption>
+				</figure>
+				<figure class="slide__figure">
+					<div class="slide__figure-inner">
+						<div class="slide__figure-img" style="background-image: url(img/4.jpg)"></div>
+						<div class="slide__figure-reveal"></div>
+					</div>
+					<figcaption>
+						<h3 class="slide__figure-title">岚山枫叶特写</h3>
+						<p class="slide__figure-description">嘿嘿。。。后期调光很重要</p>
+					</figcaption>
+				</figure>
+				<span class="slide__number slide__number--left">1</span>
+				<span class="slide__number slide__number--right">2</span>
+			</div>
+			<div class="slide slide--layout-2">
+				<figure class="slide__figure">
+					<div class="slide__figure-inner">
+						<div class="slide__figure-img" style="background-image: url(img/5.jpg)"></div>
+						<div class="slide__figure-reveal"></div>
+					</div>
+					<figcaption>
+						<h3 class="slide__figure-title">秋天的金阁寺</h3>
+						<p class="slide__figure-description">感觉5月份来了个假的金阁寺....</p>
+					</figcaption>
+				</figure>
+				<figure class="slide__figure">
+					<div class="slide__figure-inner">
+						<div class="slide__figure-img" style="background-image: url(img/6.jpg)"></div>
+						<div class="slide__figure-reveal"></div>
+					</div>
+					<figcaption>
+						<h3 class="slide__figure-title">京都红枫之行本人最满意的一张。。。完美</h3>
+						<p class="slide__figure-description">感谢姚さん高超的摄影技术和美图的强大(ps:感谢美颜相机自动瘦脸功能)</p>
+					</figcaption>
+				</figure>
+				<figure class="slide__figure">
+					<div class="slide__figure-inner">
+						<div class="slide__figure-img" style="background-image: url(img/7.jpg)"></div>
+						<div class="slide__figure-reveal"></div>
+					</div>
+					<figcaption>
+						<h3 class="slide__figure-title">美美的艳秋</h3>
+						<p class="slide__figure-description">出自姚摄影师之手，赞</p>
+					</figcaption>
+				</figure>
+				<span class="slide__number slide__number--left">3</span>
+				<span class="slide__number slide__number--right">4</span>
+			</div>
+			<div class="slide slide--layout-3">
+				<figure class="slide__figure">
+					<div class="slide__figure-inner">
+						<div class="slide__figure-img" style="background-image: url(img/8.jpg)"></div>
+						<div class="slide__figure-reveal"></div>
+					</div>
+					<figcaption>
+						<h3 class="slide__figure-title">这色彩，绝了</h3>
+						<p class="slide__figure-description"></p>
+					</figcaption>
+				</figure>
+				<figure class="slide__figure">
+					<div class="slide__figure-inner">
+						<div class="slide__figure-img" style="background-image: url(img/9.jpg)"></div>
+						<div class="slide__figure-reveal"></div>
+					</div>
+					<figcaption>
+						<h3 class="slide__figure-title">还是漫山遍野的红柱子</h3>
+						<p class="slide__figure-description">虽然没有太阳，但还是很开心的！</p>
+					</figcaption>
+				</figure>
+				<figure class="slide__figure">
+					<div class="slide__figure-inner">
+						<div class="slide__figure-img" style="background-image: url(img/10.jpg)"></div>
+						<div class="slide__figure-reveal"></div>
+					</div>
+					<figcaption>
+						<h3 class="slide__figure-title">路过东福寺</h3>
+						<p class="slide__figure-description">意外收获绝美枫叶林</p>
+					</figcaption>
+				</figure>
+				<figure class="slide__figure">
+					<div class="slide__figure-inner">
+						<div class="slide__figure-img" style="background-image: url(img/11.jpg)"></div>
+						<div class="slide__figure-reveal"></div>
+					</div>
+					<figcaption>
+						<h3 class="slide__figure-title">路过忘记叫啥名字的地方</h3>
+						<p class="slide__figure-description">但被红枫真的太漂亮了，大家一直在各种摆拍</p>
+					</figcaption>
+				</figure>
+				<span class="slide__number slide__number--left">5</span>
+				<span class="slide__number slide__number--right">6</span>
+			</div>
+			<div class="slide slide--layout-4">
+				<figure class="slide__figure">
+					<div class="slide__figure-inner">
+						<div class="slide__figure-img" style="background-image: url(img/12.jpg)"></div>
+						<div class="slide__figure-reveal"></div>
+					</div>
+					<figcaption>
+						<h3 class="slide__figure-title">清水寺--五月份来的时候门票还是樱花的</h3>
+						<p class="slide__figure-description">现在的门票是红粉</p>
+					</figcaption>
+				</figure>
+				<figure class="slide__figure">
+					<div class="slide__figure-inner">
+						<div class="slide__figure-img" style="background-image: url(img/13.jpg)"></div>
+						<div class="slide__figure-reveal"></div>
+					</div>
+					<figcaption>
+						<h3 class="slide__figure-title">只有一个字--美</h3>
+						<p class="slide__figure-description">山脚下的视角，被红枫簇拥的五层塔</p>
+					</figcaption>
+				</figure>
+				<figure class="slide__figure">
+					<div class="slide__figure-inner">
+						<div class="slide__figure-img" style="background-image: url(img/14.jpg)"></div>
+						<div class="slide__figure-reveal"></div>
+					</div>
+					<figcaption>
+						<h3 class="slide__figure-title">捕捉的很棒。。。</h3>
+						<p class="slide__figure-description"></p>
+					</figcaption>
+				</figure>
+				<figure class="slide__figure">
+					<div class="slide__figure-inner">
+						<div class="slide__figure-img" style="background-image: url(img/15.jpg)"></div>
+						<div class="slide__figure-reveal"></div>
+					</div>
+					<figcaption>
+						<h3 class="slide__figure-title">单反终于有点作用了。。。。。</h3>
+						<p class="slide__figure-description"></p>
+					</figcaption>
+				</figure>
+				<span class="slide__number slide__number--left">7</span>
+				<span class="slide__number slide__number--right">8</span>
+			</div>
+			<div class="slide slide--layout-5">
+				<figure class="slide__figure">
+					<div class="slide__figure-inner">
+						<div class="slide__figure-img" style="background-image: url(img/16.jpg)"></div>
+						<div class="slide__figure-reveal"></div>
+					</div>
+					<figcaption>
+						<h3 class="slide__figure-title">鸭川周边最像古日本</h3>
+						<p class="slide__figure-description">这才是印象中的日本</p>
+					</figcaption>
+				</figure>
+				<figure class="slide__figure">
+					<div class="slide__figure-inner">
+						<div class="slide__figure-img" style="background-image: url(img/17.jpg);background-position: 100% 100%;"></div>
+						<div class="slide__figure-reveal"></div>
+					</div>
+					<figcaption>
+						<h3 class="slide__figure-title">京都红枫之行</h3>
+						<p class="slide__figure-description">美呆了，没想到跟京都这么有缘分，第二次京都之行完美收官！</p>
+					</figcaption>
+				</figure>
+				<span class="slide__number slide__number--left">9</span>
+				<span class="slide__number slide__number--right">10</span>
+			</div>
+			<!-- revealer -->
+			<div class="revealer">
+				<div class="revealer__item revealer__item--left"></div>
+				<div class="revealer__item revealer__item--right"></div>
+			</div>
+			<nav class="arrow-nav">
+				<button class="arrow-nav__item arrow-nav__item--prev">
+					<svg class="icon icon--nav">
+						<use xlink:href="#icon-nav"></use>
+					</svg>
+				</button>
+				<button class="arrow-nav__item arrow-nav__item--next">
+					<svg class="icon icon--nav">
+						<use xlink:href="#icon-nav"></use>
+					</svg>
+				</button>
+			</nav>
+			<!-- navigation -->
+			<nav class="nav">
+				<button class="nav__button">
+					<span class="nav__button-text">京都红枫游记</span>
+				</button>
+				<h2 class="nav__chapter">岚山</h2>
+				<div class="toc">
+					<a class="toc__item" href="#entry-1">
+						<span class="toc__item-page">01.</span>
+						<span class="toc__item-title">岚山</span>
+					</a>
+					<a class="toc__item" href="#entry-2">
+						<span class="toc__item-page">03.</span>
+						<span class="toc__item-title">金阁寺</span>
+					</a>
+					<a class="toc__item" href="#entry-3">
+						<span class="toc__item-page">05.</span>
+						<span class="toc__item-title">伏见稻荷神社及周边</span>
+					</a>
+					<a class="toc__item" href="#entry-4">
+						<span class="toc__item-page">07.</span>
+						<span class="toc__item-title">清水寺</span>
+					</a>
+					<a class="toc__item" href="#entry-5">
+						<span class="toc__item-page">09.</span>
+						<span class="toc__item-title">鸭川-花见小路</span>
+					</a>
+				</div>
+			</nav>
+			<!-- little sides -->
+			<div class="slideshow__indicator"></div>
+			<div class="slideshow__indicator"></div>
+		</div>
+	</main>
+	<div class="maplebg"></div>
+	<script> 
+		var d = "<div class='maple'>🍁<div>";
+		setInterval(function () {
+			var f = $(document).width();
+			var e = Math.random() * f; // 枫叶的定位left值
+			var o = 0.2 + Math.random(); // 枫叶的透明度
+			var fon = 25 + Math.random() * 10; // 枫叶大小
+			var l = e - 100 + 200 * Math.random(); // 枫叶的横向位移
+			var k = 8000 + 5000 * Math.random();
+			var deg = Math.random() * 360; // 枫叶的方向
+			$(d).clone().appendTo(".maplebg").css({
+				left: e + "px",
+				opacity: o,
+				transform: "rotate(" + deg + "deg)",
+				"font-size": fon,
+			}).animate({
+				top: "550px",
+				left: l + "px",
+				opacity: 0.1,
+			}, k, "linear", function () {
+				$(this).remove()
+			})
+		}, 1000)
+	</script>
+	<script src="js/imagesloaded.pkgd.min.js"></script>
+	<script src="js/TweenMax.min.js"></script>
+	<script src="js/demo.js"></script>
+</body>
+
+</html>
